@@ -1,6 +1,6 @@
 ---
-title: "Anchoring Effect Survey Analysis"
-author: "Florian Kupczik"
+title: "Bachelor Thesis Effect Survey Analysis"
+author: "Florian"
 date: "`r Sys.Date()`"
 output:
   html_document: default
@@ -23,9 +23,9 @@ library(knitr)
 library(tidyr)
 
 
-High <- read_excel("C:/Users/dange/OneDrive/Uni/Sem8; Fin/BA/Survey results/Clean/High Anchor.xlsx") %>% mutate(group = "High")
-Low <- read_excel("C:/Users/dange/OneDrive/Uni/Sem8; Fin/BA/Survey results/Clean/Low Anchor.xlsx") %>% mutate(group = "Low")
-Control <- read_excel("C:/Users/dange/OneDrive/Uni/Sem8; Fin/BA/Survey results/Clean/Control.xlsx") %>% mutate(group = "Control")
+High <- read_excel("Priavte Data Path 1") %>% mutate(group = "High")
+Low <- read_excel("Priavte Data Path 2") %>% mutate(group = "Low")
+Control <- read_excel("Priavte Data Path 3") %>% mutate(group = "Control")
 
 Data <- bind_rows(High, Low, Control)
 ```
